@@ -159,7 +159,7 @@ def warmup(epoch,net,optimizer,dataloader):
     print('%s | Epoch [%3d/%3d]\t Mean loss: %.4f'
             %(args.dataset, epoch, args.num_epochs, np.mean(loss_record)))
 
-def plot_confusion_matrices(total_targets, total_predictions, classes, epoch)
+def plot_confusion_matrices(total_targets, total_predictions, classes, epoch):
     cm = confusion_matrix(total_targets, total_predictions, labels=range(args.num_class))
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=classes)
 
