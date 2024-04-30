@@ -8,3 +8,5 @@ pip install -r requirements.txt
 Take a look at the scripts found in `scripts/` to run various experiments. For example, `scripts/run_usgs_dividemix_sym0.3_CE.sh` will run the DivideMix algorithm on the USGS dataset, with 30% symmetric noise, trained with standard cross entropy loss. 
 
 The main training code can be found in `Train_usgs.py` and the dataloader code can be found in `dataloader_usgs.py`. Each training run will generate 2 model checkpoints, TSNE and GMM visualizations, and a confusion matrix for each run over the test set. 
+
+To run the "no DivideMix" version of the code, simply set the warmup epochs to be >= the total epochs. This will train two standard classifiers without using the DivideMix algorithm, and at test time both model's logits will be added together for the final prediction. This was done for ease of implementation, as the warmup code structure was already in the original DivideMix code. 
