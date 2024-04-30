@@ -1,0 +1,185 @@
+using cuda
+models loaded
+all has a size of 45815 {
+    "Algae": 3464,
+    "Artificial": 800,
+    "Bird": 31928,
+    "Bony Fish": 1259,
+    "Cartilaginous Fish": 5671,
+    "Debris": 164,
+    "Glare": 86,
+    "Invertebrate": 828,
+    "Mammal": 1059,
+    "Reptile": 160,
+    "Unknown_Other": 396
+}
+running codivide for net1
+batch 0
+batch 100
+batch 200
+batch 300
+batch 400
+batch 500
+batch 600
+batch 700
+net1 running tsne (45815,) (45815, 512)
+[t-SNE] Computing 91 nearest neighbors...
+[t-SNE] Indexed 45815 samples in 0.019s...
+[t-SNE] Computed neighbors for 45815 samples in 71.080s...
+[t-SNE] Computed conditional probabilities for sample 1000 / 45815
+[t-SNE] Computed conditional probabilities for sample 2000 / 45815
+[t-SNE] Computed conditional probabilities for sample 3000 / 45815
+[t-SNE] Computed conditional probabilities for sample 4000 / 45815
+[t-SNE] Computed conditional probabilities for sample 5000 / 45815
+[t-SNE] Computed conditional probabilities for sample 6000 / 45815
+[t-SNE] Computed conditional probabilities for sample 7000 / 45815
+[t-SNE] Computed conditional probabilities for sample 8000 / 45815
+[t-SNE] Computed conditional probabilities for sample 9000 / 45815
+[t-SNE] Computed conditional probabilities for sample 10000 / 45815
+[t-SNE] Computed conditional probabilities for sample 11000 / 45815
+[t-SNE] Computed conditional probabilities for sample 12000 / 45815
+[t-SNE] Computed conditional probabilities for sample 13000 / 45815
+[t-SNE] Computed conditional probabilities for sample 14000 / 45815
+[t-SNE] Computed conditional probabilities for sample 15000 / 45815
+[t-SNE] Computed conditional probabilities for sample 16000 / 45815
+[t-SNE] Computed conditional probabilities for sample 17000 / 45815
+[t-SNE] Computed conditional probabilities for sample 18000 / 45815
+[t-SNE] Computed conditional probabilities for sample 19000 / 45815
+[t-SNE] Computed conditional probabilities for sample 20000 / 45815
+[t-SNE] Computed conditional probabilities for sample 21000 / 45815
+[t-SNE] Computed conditional probabilities for sample 22000 / 45815
+[t-SNE] Computed conditional probabilities for sample 23000 / 45815
+[t-SNE] Computed conditional probabilities for sample 24000 / 45815
+[t-SNE] Computed conditional probabilities for sample 25000 / 45815
+[t-SNE] Computed conditional probabilities for sample 26000 / 45815
+[t-SNE] Computed conditional probabilities for sample 27000 / 45815
+[t-SNE] Computed conditional probabilities for sample 28000 / 45815
+[t-SNE] Computed conditional probabilities for sample 29000 / 45815
+[t-SNE] Computed conditional probabilities for sample 30000 / 45815
+[t-SNE] Computed conditional probabilities for sample 31000 / 45815
+[t-SNE] Computed conditional probabilities for sample 32000 / 45815
+[t-SNE] Computed conditional probabilities for sample 33000 / 45815
+[t-SNE] Computed conditional probabilities for sample 34000 / 45815
+[t-SNE] Computed conditional probabilities for sample 35000 / 45815
+[t-SNE] Computed conditional probabilities for sample 36000 / 45815
+[t-SNE] Computed conditional probabilities for sample 37000 / 45815
+[t-SNE] Computed conditional probabilities for sample 38000 / 45815
+[t-SNE] Computed conditional probabilities for sample 39000 / 45815
+[t-SNE] Computed conditional probabilities for sample 40000 / 45815
+[t-SNE] Computed conditional probabilities for sample 41000 / 45815
+[t-SNE] Computed conditional probabilities for sample 42000 / 45815
+[t-SNE] Computed conditional probabilities for sample 43000 / 45815
+[t-SNE] Computed conditional probabilities for sample 44000 / 45815
+[t-SNE] Computed conditional probabilities for sample 45000 / 45815
+[t-SNE] Computed conditional probabilities for sample 45815 / 45815
+[t-SNE] Mean sigma: 0.631858
+[t-SNE] Computed conditional probabilities in 1.904s
+[t-SNE] Iteration 50: error = 115.8968201, gradient norm = 0.0000029 (50 iterations in 8.784s)
+[t-SNE] Iteration 100: error = 107.5630264, gradient norm = 0.0024240 (50 iterations in 9.899s)
+[t-SNE] Iteration 150: error = 101.1343155, gradient norm = 0.0006968 (50 iterations in 7.509s)
+[t-SNE] Iteration 200: error = 100.2553711, gradient norm = 0.0003803 (50 iterations in 7.486s)
+[t-SNE] Iteration 250: error = 99.8868866, gradient norm = 0.0002678 (50 iterations in 7.475s)
+[t-SNE] KL divergence after 250 iterations with early exaggeration: 99.886887
+[t-SNE] Iteration 300: error = 4.9591780, gradient norm = 0.0011479 (50 iterations in 7.424s)
+[t-SNE] Iteration 350: error = 4.4781699, gradient norm = 0.0006271 (50 iterations in 7.508s)
+[t-SNE] Iteration 400: error = 4.1704993, gradient norm = 0.0004175 (50 iterations in 7.337s)
+[t-SNE] Iteration 450: error = 3.9541740, gradient norm = 0.0003115 (50 iterations in 7.306s)
+[t-SNE] Iteration 500: error = 3.7951546, gradient norm = 0.0002425 (50 iterations in 7.274s)
+[t-SNE] Iteration 550: error = 3.6717961, gradient norm = 0.0001971 (50 iterations in 7.286s)
+[t-SNE] Iteration 600: error = 3.5723212, gradient norm = 0.0001643 (50 iterations in 7.260s)
+[t-SNE] Iteration 650: error = 3.4898756, gradient norm = 0.0001399 (50 iterations in 7.297s)
+[t-SNE] Iteration 700: error = 3.4196944, gradient norm = 0.0001212 (50 iterations in 7.287s)
+[t-SNE] Iteration 750: error = 3.3588006, gradient norm = 0.0001068 (50 iterations in 7.341s)
+[t-SNE] Iteration 800: error = 3.3058000, gradient norm = 0.0000950 (50 iterations in 7.285s)
+[t-SNE] Iteration 850: error = 3.2590380, gradient norm = 0.0000852 (50 iterations in 7.267s)
+[t-SNE] Iteration 900: error = 3.2173972, gradient norm = 0.0000772 (50 iterations in 7.287s)
+[t-SNE] Iteration 950: error = 3.1801367, gradient norm = 0.0000703 (50 iterations in 7.281s)
+[t-SNE] Iteration 1000: error = 3.1465516, gradient norm = 0.0000647 (50 iterations in 7.270s)
+[t-SNE] KL divergence after 1000 iterations: 3.146552
+running codivide for net2
+batch 0
+batch 100
+batch 200
+batch 300
+batch 400
+batch 500
+batch 600
+batch 700
+net2 running tsne (45815,) (45815, 512)
+[t-SNE] Computing 91 nearest neighbors...
+[t-SNE] Indexed 45815 samples in 0.019s...
+[t-SNE] Computed neighbors for 45815 samples in 70.842s...
+[t-SNE] Computed conditional probabilities for sample 1000 / 45815
+[t-SNE] Computed conditional probabilities for sample 2000 / 45815
+[t-SNE] Computed conditional probabilities for sample 3000 / 45815
+[t-SNE] Computed conditional probabilities for sample 4000 / 45815
+[t-SNE] Computed conditional probabilities for sample 5000 / 45815
+[t-SNE] Computed conditional probabilities for sample 6000 / 45815
+[t-SNE] Computed conditional probabilities for sample 7000 / 45815
+[t-SNE] Computed conditional probabilities for sample 8000 / 45815
+[t-SNE] Computed conditional probabilities for sample 9000 / 45815
+[t-SNE] Computed conditional probabilities for sample 10000 / 45815
+[t-SNE] Computed conditional probabilities for sample 11000 / 45815
+[t-SNE] Computed conditional probabilities for sample 12000 / 45815
+[t-SNE] Computed conditional probabilities for sample 13000 / 45815
+[t-SNE] Computed conditional probabilities for sample 14000 / 45815
+[t-SNE] Computed conditional probabilities for sample 15000 / 45815
+[t-SNE] Computed conditional probabilities for sample 16000 / 45815
+[t-SNE] Computed conditional probabilities for sample 17000 / 45815
+[t-SNE] Computed conditional probabilities for sample 18000 / 45815
+[t-SNE] Computed conditional probabilities for sample 19000 / 45815
+[t-SNE] Computed conditional probabilities for sample 20000 / 45815
+[t-SNE] Computed conditional probabilities for sample 21000 / 45815
+[t-SNE] Computed conditional probabilities for sample 22000 / 45815
+[t-SNE] Computed conditional probabilities for sample 23000 / 45815
+[t-SNE] Computed conditional probabilities for sample 24000 / 45815
+[t-SNE] Computed conditional probabilities for sample 25000 / 45815
+[t-SNE] Computed conditional probabilities for sample 26000 / 45815
+[t-SNE] Computed conditional probabilities for sample 27000 / 45815
+[t-SNE] Computed conditional probabilities for sample 28000 / 45815
+[t-SNE] Computed conditional probabilities for sample 29000 / 45815
+[t-SNE] Computed conditional probabilities for sample 30000 / 45815
+[t-SNE] Computed conditional probabilities for sample 31000 / 45815
+[t-SNE] Computed conditional probabilities for sample 32000 / 45815
+[t-SNE] Computed conditional probabilities for sample 33000 / 45815
+[t-SNE] Computed conditional probabilities for sample 34000 / 45815
+[t-SNE] Computed conditional probabilities for sample 35000 / 45815
+[t-SNE] Computed conditional probabilities for sample 36000 / 45815
+[t-SNE] Computed conditional probabilities for sample 37000 / 45815
+[t-SNE] Computed conditional probabilities for sample 38000 / 45815
+[t-SNE] Computed conditional probabilities for sample 39000 / 45815
+[t-SNE] Computed conditional probabilities for sample 40000 / 45815
+[t-SNE] Computed conditional probabilities for sample 41000 / 45815
+[t-SNE] Computed conditional probabilities for sample 42000 / 45815
+[t-SNE] Computed conditional probabilities for sample 43000 / 45815
+[t-SNE] Computed conditional probabilities for sample 44000 / 45815
+[t-SNE] Computed conditional probabilities for sample 45000 / 45815
+[t-SNE] Computed conditional probabilities for sample 45815 / 45815
+[t-SNE] Mean sigma: 0.614517
+[t-SNE] Computed conditional probabilities in 1.843s
+[t-SNE] Iteration 50: error = 115.9259644, gradient norm = 0.0000048 (50 iterations in 9.003s)
+[t-SNE] Iteration 100: error = 108.2017441, gradient norm = 0.0024435 (50 iterations in 9.718s)
+[t-SNE] Iteration 150: error = 101.6230927, gradient norm = 0.0006112 (50 iterations in 7.493s)
+[t-SNE] Iteration 200: error = 100.7252197, gradient norm = 0.0003352 (50 iterations in 7.516s)
+[t-SNE] Iteration 250: error = 100.3495483, gradient norm = 0.0002311 (50 iterations in 7.409s)
+[t-SNE] KL divergence after 250 iterations with early exaggeration: 100.349548
+[t-SNE] Iteration 300: error = 4.9785581, gradient norm = 0.0011535 (50 iterations in 7.288s)
+[t-SNE] Iteration 350: error = 4.4818645, gradient norm = 0.0006079 (50 iterations in 7.169s)
+[t-SNE] Iteration 400: error = 4.1781955, gradient norm = 0.0004076 (50 iterations in 7.239s)
+[t-SNE] Iteration 450: error = 3.9660616, gradient norm = 0.0003049 (50 iterations in 7.217s)
+[t-SNE] Iteration 500: error = 3.8086090, gradient norm = 0.0002407 (50 iterations in 7.225s)
+[t-SNE] Iteration 550: error = 3.6851151, gradient norm = 0.0001971 (50 iterations in 7.212s)
+[t-SNE] Iteration 600: error = 3.5858984, gradient norm = 0.0001642 (50 iterations in 7.177s)
+[t-SNE] Iteration 650: error = 3.5036054, gradient norm = 0.0001407 (50 iterations in 7.201s)
+[t-SNE] Iteration 700: error = 3.4334660, gradient norm = 0.0001217 (50 iterations in 7.206s)
+[t-SNE] Iteration 750: error = 3.3727272, gradient norm = 0.0001072 (50 iterations in 7.187s)
+[t-SNE] Iteration 800: error = 3.3197334, gradient norm = 0.0000959 (50 iterations in 7.259s)
+[t-SNE] Iteration 850: error = 3.2728407, gradient norm = 0.0000854 (50 iterations in 7.164s)
+[t-SNE] Iteration 900: error = 3.2311935, gradient norm = 0.0000776 (50 iterations in 7.211s)
+[t-SNE] Iteration 950: error = 3.1939120, gradient norm = 0.0000706 (50 iterations in 7.166s)
+[t-SNE] Iteration 1000: error = 3.1602948, gradient norm = 0.0000646 (50 iterations in 7.188s)
+[t-SNE] KL divergence after 1000 iterations: 3.160295
+
+real	11m27.421s
+user	21m58.324s
+sys	2m23.575s
