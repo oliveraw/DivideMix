@@ -463,31 +463,31 @@ if __name__ == "__main__":
         for param_group in optimizer2.param_groups:
             param_group['lr'] = lr          
         
-        # if epoch<args.warmup_epochs: 
-        #     print('Warmup Net1')
-        #     warmup(epoch,net1,optimizer1,warmup_trainloader)    
-        #     print('Warmup Net2')
-        #     warmup(epoch,net2,optimizer2,warmup_trainloader) 
+        if epoch<args.warmup_epochs: 
+            print('Warmup Net1')
+            warmup(epoch,net1,optimizer1,warmup_trainloader)    
+            print('Warmup Net2')
+            warmup(epoch,net2,optimizer2,warmup_trainloader) 
     
-        # else:         
-        #     # first split the data 
-        #     prob1,all_loss[0]=eval_train("net1",net1,all_loss[0],eval_dataset,eval_loader,epoch)   
-        #     prob2,all_loss[1]=eval_train("net2",net2,all_loss[1],eval_dataset,eval_loader,epoch) 
+        else:         
+            # first split the data 
+            prob1,all_loss[0]=eval_train("net1",net1,all_loss[0],eval_dataset,eval_loader,epoch)   
+            prob2,all_loss[1]=eval_train("net2",net2,all_loss[1],eval_dataset,eval_loader,epoch) 
                 
-        #     pred1 = (prob1 > args.p_threshold)      
-        #     pred2 = (prob2 > args.p_threshold)
-        #     print("Co-divide check model 1")
-        #     loader.check_noisy(pred1)
-        #     print("Co-divide check model 2")
-        #     loader.check_noisy(pred2)
+            pred1 = (prob1 > args.p_threshold)      
+            pred2 = (prob2 > args.p_threshold)
+            print("Co-divide check model 1")
+            loader.check_noisy(pred1)
+            print("Co-divide check model 2")
+            loader.check_noisy(pred2)
             
-        #     print('Train Net1')
-        #     labeled_trainloader, unlabeled_trainloader = loader.run('train', transform='default', pred=pred2, prob=prob2) # co-divide
-        #     train(epoch, net1, net2, optimizer1, labeled_trainloader, unlabeled_trainloader) # train net1
+            print('Train Net1')
+            labeled_trainloader, unlabeled_trainloader = loader.run('train', transform='default', pred=pred2, prob=prob2) # co-divide
+            train(epoch, net1, net2, optimizer1, labeled_trainloader, unlabeled_trainloader) # train net1
             
-        #     print('\nTrain Net2')
-        #     labeled_trainloader, unlabeled_trainloader = loader.run('train', transform='default', pred=pred1, prob=prob1) # co-divide
-        #     train(epoch, net2, net1,optimizer2, labeled_trainloader, unlabeled_trainloader) # train net2        
+            print('\nTrain Net2')
+            labeled_trainloader, unlabeled_trainloader = loader.run('train', transform='default', pred=pred1, prob=prob1) # co-divide
+            train(epoch, net2, net1,optimizer2, labeled_trainloader, unlabeled_trainloader) # train net2        
 
         if epoch % 50 == 0 or epoch == args.warmup_epochs:
             test(test_loader,epoch,net1,net2,eval_dataset.get_idx_to_class_map())  
